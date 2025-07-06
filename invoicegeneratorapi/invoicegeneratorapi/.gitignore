@@ -1,33 +1,54 @@
-HELP.md
+# Java & build
+*.class
+*.jar
+*.war
+*.ear
+*.log
+*.tmp
+*.out
+*.pid
+*.swp
+hs_err_pid*
+
+# Maven
 target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+dependency-reduced-pom.xml
+release.properties
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
 
-### IntelliJ IDEA ###
-.idea
-*.iws
+# IDEs
+.idea/
 *.iml
 *.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
+*.iws
 .vscode/
+out/
+.settings/
+.classpath
+.project
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Spring Boot config
+application.properties
+application.yml
+application-local.*
+application-dev.*
+application-prod.*
+
+# Env file
+.env
+.env.*
+
+# Database
+*.h2.db
+*.mv.db
+
+# Misc
+*.bak
